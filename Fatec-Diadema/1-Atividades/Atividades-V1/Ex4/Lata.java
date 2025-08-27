@@ -12,7 +12,5 @@ public class Lata {
 
         double volume = 3.14159 * Math.pow(raio, 2) * altura;
         System.out.println("Volume da lata de oleo é de: " + volume);
-
-        entrada.close();
     }
 }

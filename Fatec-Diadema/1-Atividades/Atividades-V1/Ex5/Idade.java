@@ -16,7 +16,5 @@ public class Idade {
         int idade = (anos * 365) + (meses * 30) + dias;
 
         System.out.println("A sua idade em dias é igual a: " + idade + " dias");
-
-        entrada.close();
     }
 }
