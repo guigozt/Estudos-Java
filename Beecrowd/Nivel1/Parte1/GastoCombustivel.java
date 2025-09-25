@@ -1,7 +1,7 @@
+
 import java.util.Scanner;
 
-public class GastoCombustivel
-{
+public class GastoCombustivel{
     public static double quantLitros(int t, int v){
         return (t * v) / 12.0;  
     }
