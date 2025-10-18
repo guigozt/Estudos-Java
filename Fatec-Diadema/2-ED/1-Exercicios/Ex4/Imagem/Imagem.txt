@@ -1,0 +1,25 @@
+a - [ 10   10   10   10 ]
+    [ 10  100  100  10 ]
+    [ 10  100  100  10 ]
+    [ 10   10   10   10 ]
+    
+    Valores baixos (10) → tons de cinza claro.
+    Valores altos (100) → tons mais escuros.
+
+    A borda externa é clara (10).
+    O centro (2×2) é escuro (100).
+
+    Visualmente seria tipo:
+    ⬜⬜⬜⬜
+    ⬜⬛⬛⬜
+    ⬜⬛⬛⬜
+    ⬜⬜⬜⬜
+
+b - Valores -1 e 1 nas diagonais destacam diferenças entre pixels ↘ e ↙.
+    Assim, o filtro vai realçar as bordas que estão nas diagonais do quadrado central.
+
+    O quadrado escuro (100) contrasta com a borda clara (10).
+    O filtro vai destacar as transições diagonais entre a região escura e clara.
+    Então, espera-se que apareçam as quinas do quadrado central (os vértices).
+
+c - Filtros de detecção de borda funcionam medindo diferença de intensidade entre pixels vizinhos. Aqui, o kernel tem valores +1 e -1 em posições diagonais, e 0 nos outros lugares. Isso significa que ele só olha diferenças entre diagonais (superior esquerdo ↔ inferior direito, e superior direito ↔ inferior esquerdo). Quando há contraste forte entre um pixel claro e um escuro nessas direções, o resultado é um valor alto (bordas realçadas).

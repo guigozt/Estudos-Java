@@ -1,0 +1,14 @@
+a - Matriz adjacente:
+        A   B   C
+    A   1   1   0
+    B   0   0   1
+    C   0   0   0
+
+b - O auto-laço parace na diagonal principal: matriz[0][0] = 1 -> Significa que A tem um laço consigo mesmo
+
+c - Para saber se existe conexão de X -> Y, basta olhar a posição correspondente da matriz
+    
+    matriz[0][1] (linha A, coluna B) = 1 → significa que A é vizinho de B (A aponta para B).
+    matriz[1][2] = 1 → significa que B é vizinho de C.
+
+    Se o valor for 0, não há ligação.

@@ -1,0 +1,17 @@
+a - Sistema Linear Correspondente
+->  3x + 1y = b1
+->  2x + 4y = b2
+
+b - Diagonal principal da matriz
+->  3 e 4
+
+c - Importância da diagonal no metodo Gauss-Seidel
+->  No método de Gauss-Seidel, cada incógnita é isolada usando o elemento da diagonal principal da sua equação. Isso significa que:
+
+    Para calcular 𝑥:
+    divide-se pelo coeficiente 3
+
+    Para calcular 𝑦:
+    divide-se pelo coeficiente 4
+
+    A convergência do método depende da força desses elementos da diagonal em relação aos outros da linha (diagonal dominante). Se os elementos da diagonal forem grandes o suficiente em comparação aos demais da linha, o método tende a convergir rapidamente para a solução correta.

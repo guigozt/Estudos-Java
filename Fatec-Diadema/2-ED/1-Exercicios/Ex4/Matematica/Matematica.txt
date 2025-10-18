@@ -1,0 +1,5 @@
+a - A diagonal principal são os elementos que ficam na mesma linha e coluna: 2,3,7
+
+b - O determinante é o produto dos elementos da diagonal principal -> Determinante = 2 × 3 × 7 = 42.
+
+c - Os autovalores de uma matriz triangular são exatamente os elementos da diagonal principal: 2, 3, 7
