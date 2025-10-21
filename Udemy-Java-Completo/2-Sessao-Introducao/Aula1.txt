@@ -1,0 +1,21 @@
+Histórico:
+->  Problemas resolvidos e motivo do sucesso do JAVA:
+    Ponteiros / gerenciamento de memória
+    Portabilidade falha: reescrever parte do codigo ao mudar de sucesso
+    Utilização em dispositivos diversos
+    Custo
+
+    Criada pela Sun Microsystem na decada de 90
+    Adquirida pela Oracle em 2010
+
+Aspectos notaveis:
+->  Codigo compliado para bytecode e executado pela JVM
+    Portavel, segura e robusta
+    Roda em vários tipos de dispositivos
+    Domina o mercado corporativo
+    Padrão Android por anos
+
+Edições:
+->  Java ME - Dispositivos embarcados e moveis (IoT)
+    Java SE - Desktops e servidores
+    Java EE - Aplicações corporativas

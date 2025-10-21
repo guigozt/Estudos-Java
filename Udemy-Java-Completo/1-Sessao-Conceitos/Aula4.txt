@@ -1,0 +1,37 @@
+Codigo fonte:
+->  Escrito pelo programador em uma linguagem
+
+Compilação:
+->  1 - Codigo fonte
+    2 - Compilador(analise lexica e sintatica)
+    3 - Codigo objeto
+    4 - Gerador de código (geração de código)
+    5 - Codigo executável
+    Ex: C, C++
+
+    Vantagens:
+    ->  Velocidade
+    ->  Auxilio do compilador antes da execução
+
+Interpretação:
+->  1 - Codigo fonte
+    2 - Interpretador (Analise lexica + sintatica + geração de código)
+    3 - Execução
+    Ex: Javascript, Python
+
+    Vantagens:
+    ->  Flexibilidade de manutenção
+    ->  Expressividade da linguagem
+    ->  Não precisa ser recompilado em plataformas diferentes
+
+Abordagem hibrida:
+->  1 - Codigo fonte
+    2 - Compilador(analise lexica e sintatica)
+    3 - ByteCode
+    4 - Interpretador(geração de código)
+    5 - Execução
+    Ex: Java (JVM), C# (.NET)
+
+    Vantagens:
+    ->  Auxilio do compilador antes da execução
+    ->  Não precisa ser recompilado em plataformas diferentes

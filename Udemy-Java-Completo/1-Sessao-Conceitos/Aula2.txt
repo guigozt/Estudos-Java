@@ -1,0 +1,10 @@
+Linguagem de programação:
+->  Conjunto de regras lexicas (ortografia) e sintaticas (gramática) para se escrever programas
+
+Lexicas:
+->  Cachorro (correto)
+->  Caxorro (errado)
+
+Sintatica
+->  O Cachorro está com fome
+->  A Cachorro está com fome

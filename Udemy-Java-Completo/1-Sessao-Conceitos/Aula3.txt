@@ -1,0 +1,6 @@
+Funcionalidade de uma IDE:
+->  Edição de codigo fonte(endentação, autocompletar, destaque de palavras)
+    Depuração e testes
+    Construção do produto final(build)
+    Sugestão de modelos(templates)
+    Auxiliar em tarefas do projeto

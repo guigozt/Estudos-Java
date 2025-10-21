@@ -1,0 +1,11 @@
+Estrutura de aplicação JAVA:
+
+1 - Composta por classes
+2 - Package - Agrupamento lógico de classes relacionadas
+    Ex: Entidades, Serviços, Repositórios
+3 - Módulo - Agrupamento lógico de pacotes relacionados
+    Ex: Financeiro
+        Entidades, Serviços, Repositórios
+
+        Graficos
+        Graficos3D, Graficos2D, Utilitarios

@@ -1,0 +1,16 @@
+O que é um algoritimo?
+->  Sequencia de instruções finitas para resolver um problema
+    Ex: Lavar roupa suja
+        Algoritimo:
+            1-Colocar roupa no recipiente
+            2-Colocar sabão e amaciante
+            3-Encher de água
+            4-Mexer tudo até dissolver todo o sabão
+            5-Deixar de molho por 20 minutos
+            6-Esfregar a roupa
+            7-Enxaguar
+            8-Torcer
+
+O que automoação?
+->  Utilizar uma máquina para executar o procedimento de forma automática ou quase
+    Ex: Utilizar uma máquina de lavar para executar a maioria das etapas
