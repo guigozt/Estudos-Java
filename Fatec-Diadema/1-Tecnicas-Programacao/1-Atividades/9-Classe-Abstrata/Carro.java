@@ -2,7 +2,8 @@ public class Carro extends Veiculo{
     @SuppressWarnings("FieldMayBeFinal")
     private int numeroPortas;
 
-    Carro(String ma, String mo, int y, int numP){
+    @SuppressWarnings("unused")
+    Carro(){
         super(ma, mo, y);
         this.numeroPortas = numP;
     }

@@ -1,3 +1,7 @@
+package P2.Funcionarios;
+
+import P2.Funcionario;
+
 public class FuncionarioPJ extends Funcionario {
     private double valorHora;
     private double horasTrabalhadas;
