@@ -1,0 +1,22 @@
+
+public static int fibonacci(int n){
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+
+->  Cada chamada não é única: fibonacci(n-1) e fibonacci(n-2) vão gerar novas chamadas, que também chamam n-1 e n-2 recursivamente.
+    Isso forma uma árvore de chamadas.
+
+Crescimento exponencial
+
+->  O número de chamadas recursivas cresce exponencialmente com n.
+    
+    T(n) o número de chamadas para calcular fibonacci(n), podemos escrever:
+    T(n)=T(n−1)+T(n−2)+1
+
+    O +1 representa a chamada atual.
+
+    Casos base: T(0) = 1, T(1) = 1.
+    Isso é aproximadamente da ordem de O(2^n).

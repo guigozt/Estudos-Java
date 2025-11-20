@@ -1,0 +1,7 @@
+inverter("Fatec")
+ = inverter("atec") + "F"
+   = (inverter("tec") + "a") + "F"
+     = ((inverter("ec") + "t") + "a") + "F"
+       = (((inverter("c") + "e") + "t") + "a") + "F"
+        = (((( "c" ) + "e") + "t") + "a") + "F"
+            = "cetaF"

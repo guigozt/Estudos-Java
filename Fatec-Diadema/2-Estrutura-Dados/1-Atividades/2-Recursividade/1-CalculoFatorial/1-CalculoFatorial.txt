@@ -1,0 +1,19 @@
+1 - CASO BASE
+->  O caso base é a condição que encerra a recursão, ou seja, o ponto em que a função não chama mais a si mesma.
+
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+
+    Quando n for 0 ou 1, a função não precisa continuar.
+    Sabemos matematicamente que 0! = 1 e 1! = 1, então podemos devolver o resultado direto.
+    O caso base é o que impede a recursão infinita — sem ele, a função nunca pararia de se chamar.
+
+2 - PASSO RECURSIVO
+->  O passo recursivo é onde a função se chama novamente, mas com um problema menor (um valor de n reduzido).
+
+    return n * fatorial(n - 1);
+    
+    A função fatorial chama ela mesma com n - 1.
+    Assim, cada chamada reduz o problema (exemplo: de 5! para 4!, depois 3!, etc.).
+    Essa “quebra” continua até que n seja 1, quando o caso base é atingido.
