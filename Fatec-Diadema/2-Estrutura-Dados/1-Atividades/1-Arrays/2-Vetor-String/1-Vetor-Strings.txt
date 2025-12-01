@@ -1,0 +1,43 @@
+Vetor com valores Strings
+
+->  Um vetor de String funciona igualzinho ao de int, só que dentro das caixinhas você guarda palavras, nomes, frases, qualquer texto.
+
+Criando um vetor de String
+->  String[] nomes = new String[3];
+
+    Aqui você criou 3 caixinhas para guardar textos.
+    No início, todas as posições têm o valor null — é como uma caixa vazia esperando um bilhetinho.
+
+Preenchendo
+->  nomes[0] = "Ana";
+->  nomes[1] = "Bruno";
+->  nomes[2] = "Carla";
+
+Acessando
+->  System.out.println(nomes[1]); // Bruno
+
+Criando já com valores
+->  String[] frutas = {"Maçã", "Banana", "Uva"};
+
+    Vetor pronto, colorido e perfumado
+
+Busca Linear
+
+->  Agora entramos no corredor da investigação 🔍.
+    A busca linear é o detetive mais simples e paciente:
+        ele olha posição por posição até encontrar o que você pediu.
+
+    É como procurar seu nome em uma lista não organizada: você lê item por item.
+
+Como funciona?
+->  Dado um vetor:
+    
+    [Ana, Bruno, Carla, Daniel]
+
+    E você quer saber onde está "Carla":
+
+    Olha a posição 0 → Ana (não é)
+    -   Posição 1 → Bruno (não é)
+    -   Posição 2 → Carla (achou!) 🎉
+
+    Se chegar ao final e não achar, anuncia: “Não está aqui.”

@@ -1,0 +1,78 @@
+O que é Vetor (Array)
+
+->  Pense no vetor como uma fila de caixas numeradas, todas alinhadas como soldados disciplinados.
+    Cada caixa guarda um valor — só um tipo de valor, sempre o mesmo (todas inteiras, ou todas textos, etc.).
+    Você acessa cada caixa usando o número da posição (o índice).
+
+    Em Java, vetores são chamados de arrays.
+
+Como declarar um vetor?
+->  int[] numeros;
+    
+    Aqui você só disse: “Java, reserve um lugar onde vou colocar várias inteiras.”
+    Mas o vetor ainda não existe, só a variável.
+
+Como criar o vetor com tamanho?
+->  numeros = new int[5];
+
+    Agora sim! Você ganhou 5 caixinhas
+    Todas começam com 0 (porque são inteiras).
+
+Ou pode fazer tudo de uma vez:
+->  int[] numeros = new int[5];
+
+Como colocar valores dentro do vetor?
+->  numeros[0] = 10;
+->  numeros[1] = 20;
+
+    numeros[0] → primeira posição
+    numeros[1] → segunda
+    Em Java, o índice sempre começa em 0. A posição final é tamanho - 1.
+
+Como acessar um valor?
+->  System.out.println(numeros[0]); // imprime 10
+
+    Simples como abrir a caixa e olhar o que tem dentro 📭.
+
+Criando um vetor já com valores
+->  int[] numeros = {10, 20, 30, 40};
+
+    Aqui Java olha, sorri e diz: “Beleza, 4 valores, então o tamanho é 4.”
+
+Percorrendo um vetor
+->  Com for tradicional
+    for (int i = 0; i < numeros.length; i++) {
+        System.out.println(numeros[i]);
+    }
+
+    numeros.length é o guardião do tamanho do vetor — nunca use número fixo.
+
+->  Com for-each
+    for (int n : numeros) {
+        System.out.println(n);
+    }
+
+    É como dizer: “Java, me entregue cada elemento desse array, um por vez.”
+
+
+Exemplo:
+
+    public class ExemploVetor {
+        public static void main(String[] args) {
+            int[] idades = new int[3];
+
+            idades[0] = 18;
+            idades[1] = 22;
+            idades[2] = 30;
+
+            for (int i = 0; i < idades.length; i++) {
+                System.out.println("Idade " + i + ": " + idades[i]);
+            }
+        }
+    }
+
+    Saída:
+
+        Idade 0: 18
+        Idade 1: 22
+        Idade 2: 30
