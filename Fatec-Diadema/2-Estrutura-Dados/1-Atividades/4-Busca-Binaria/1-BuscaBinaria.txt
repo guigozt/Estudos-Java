@@ -1,0 +1,44 @@
+O que é a busca binária?
+
+->  Enquanto a busca linear anda posição por posição, a busca binária é mais esperta:
+    Ela só funciona em vetores ORDENADOS! 
+    (acredite, isso é a regra de ouro)
+
+    Em vez de olhar tudo, ela corta o vetor ao meio e decide qual metade ainda faz sentido procurar.
+
+    É como procurar um nome numa lista telefônica:
+    -   você não começa na primeira página — você abre no meio e se orienta 📖⚡.
+
+Como a busca binária funciona?
+->  Imagine que você está procurando o número 7 dentro deste vetor (já ordenado!):
+    [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+    Olha para o meio → valor 5
+        7 é maior que 5 → procura apenas na metade direita
+
+    Agora a busca está aqui:
+    [6, 7, 8, 9]
+
+    Olha para o meio → valor 7
+        Achou!
+
+    Cada passo divide o espaço pela metade, como uma tesoura invisível
+    
+    Isso dá um desempenho O(log n), extremamente rápido comparado com O(n) da busca linear.
+
+O que está acontecendo aqui?
+inicio e fim
+    Eles são as “bordas” do pedaço do vetor onde estamos procurando.
+
+meio
+    É calculado assim:
+    int meio = (inicio + fim) / 2;
+
+Ele aponta para o centro do intervalo atual.
+
+Decisão:
+
+-   Se o número buscado for igual, encontrou.
+-   Se for maior, corta a esquerda fora.
+-   Se for menor, corta a direita fora.
+-   O intervalo vai diminuindo até perder o fôlego.
