@@ -1,0 +1,84 @@
+O que é uma lista ligada?
+
+->  É como uma corrente de pequenos baús. Cada baú guarda dois tesouros:
+    -   Um valor (por exemplo, um número ou texto)
+    -   O endereço do próximo baú
+
+    Ou seja, cada “caixinha” sabe quem vem depois dela → isso forma uma corrente.
+    Em Java, cada baú é chamado de nó (node).
+
+Como é um nó?
+->  Imagine isso visualmente:
+
+    [ DADO | PRÓXIMO ]
+
+    Exemplo real:
+
+    [ 10 | -> ] --> [ 20 | -> ] --> [ 30 | null ]
+
+    O último aponta para null, dizendo: “Não tem mais ninguém depois de mim”.
+
+Comparando com vetor
+
+| Vetor                         | Lista Ligada                           |
+| ----------------------------- | -------------------------------------- |
+| tamanho fixo                  | cresce e diminui livremente            |
+| posições contínuas na memória | cada nó pode estar em qualquer lugar   |
+| acessar posição é rápido      | acessar posição exige caminhar nó a nó |
+| inserir no meio é caro        | inserir no meio é fácil                |
+
+
+Como funciona uma lista ligada?
+->  Você só guarda um endereço chamado head (cabeça), que aponta para o primeiro nó.
+
+    head → [ 10 ] → [ 20 ] → [ 30 ]
+
+    Se quiser percorrer tudo, você segue o caminho:
+    -   head → next → next → next
+
+Exemplo:
+-   Criando o nó
+    class No {
+        int dado;
+        No proximo;
+
+        No(int dado) {
+            this.dado = dado;
+            this.proximo = null;
+        }
+    }
+
+-   Criando e ligando os nós
+    public class ListaLigadaSimples {
+        public static void main(String[] args) {
+
+            // criando os nós
+            No n1 = new No(10);
+            No n2 = new No(20);
+            No n3 = new No(30);
+
+            // ligando os nós
+            n1.proximo = n2;
+            n2.proximo = n3;
+
+            // head aponta para o primeiro
+            No head = n1;
+
+            // percorrendo
+            No atual = head;
+            while (atual != null) {
+                System.out.println(atual.dado);
+                atual = atual.proximo;
+            }
+        }
+    }
+
+-   Saída:
+    10
+    20
+    30
+
+Por que usar listas ligadas?
+-   É fácil inserir e remover elementos no começo e no meio.
+-   Ótima para estruturas que mudam muito de tamanho.
+-   Não desperdiça memória como alguns vetores fazem.
