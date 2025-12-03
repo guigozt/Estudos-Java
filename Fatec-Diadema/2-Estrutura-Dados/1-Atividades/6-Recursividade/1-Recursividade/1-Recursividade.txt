@@ -1,0 +1,76 @@
+O que é recursividade?
+->  É quando uma função se chama novamente, repetindo o processo até chegar em um ponto final.
+
+    Pense numa fila de dominós:
+    um empurra o seguinte, o seguinte empurra o próximo, e no final tudo para naturalmente.
+
+    Esse ponto de parada é chamado de caso base.
+
+Passo a passo da recursão:
+->  Imagine que o vetor é:
+    [3, 1, 4, 0, 2]
+
+E chamamos:
+->  somar(0, 0, vetor)
+
+1ª chamada
+
+    soma = 0
+    posição = 0
+    valor = 3
+
+-   soma vira 3
+-   chama de novo:
+        somar(3, 1, vetor)
+
+2ª chamada
+
+    soma = 3
+    posição = 1
+    valor = 1
+
+-   soma vira 4
+-   chama:
+        somar(4, 2, vetor)
+
+3ª chamada
+
+    soma = 4
+    posição = 2
+    valor = 4
+
+-   soma vira 8
+-   chama:
+        somar(8, 3, vetor)
+
+4ª chamada
+
+    soma = 8
+    posição = 3
+    valor = 0
+
+-   soma vira 8
+-   chama:
+        somar(8, 4, vetor)
+
+5ª chamada
+
+    soma = 8
+    posição = 4
+    valor = 2
+
+-   soma vira 10
+-   chama:
+        somar(10, 5, vetor)
+
+6ª chamada (caso base)
+
+    posição = 5
+    vetor.length = 5
+
+-   Agora posicao < vetor.length é falso.
+
+Então ele cai no else:
+-   return soma;
+
+E retorna 10.
