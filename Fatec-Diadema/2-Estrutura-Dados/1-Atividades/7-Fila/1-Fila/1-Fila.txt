@@ -1,0 +1,54 @@
+O que é uma Fila (Queue)?
+->  Uma fila é uma estrutura de dados onde os elementos entram por um lado e saem pelo outro.
+
+Regra de ouro da fila:
+-   O primeiro que entra é o primeiro que sai.
+-   Chamamos isso de FIFO (First In, First Out).
+
+Imagine a fila do cinema:
+    quem chega primeiro, escolhe o melhor lugar primeiro
+    e ninguém fura a fila — nem o algoritmo!
+
+Como a fila funciona?
+->  A fila tem duas operações principais:
+
+-   enqueue (ou adicionar)
+    Coloca um item no final da fila.
+
+-   dequeue (ou remover)
+    Remove o item do início da fila.
+
+    Além disso, muitas implementações têm:
+
+-   peek
+    Olha o primeiro da fila sem remover.
+
+-   isEmpty
+    Verifica se está vazia.
+
+Uma fila é útil quando…
+-   processos precisam esperar (como impressoras)
+-   simulações de atendimento (supermercado, banco, rodoviária)
+-   buffers de dados (teclado, rede, threads)
+-   algoritmos como BFS (busca em largura em grafos)
+
+    Ela é literalmente a fila da vida real, só que dentro da RAM.
+
+Visualizando uma fila
+->  Imagine estes números chegando:
+
+    adicionar(5)
+    adicionar(7)
+    adicionar(9)
+
+A fila fica assim:
+->  INICIO → [5] [7] [9] ← FIM
+
+Agora, se remover:
+
+    remover()
+
+Sai o 5, e a fila vira:
+->  INICIO → [7] [9] ← FIM
+
+Simples como uma respiração digital 
