@@ -1,0 +1,46 @@
+O que é busca linear?
+
+->  Busca linear é a técnica mais simples (e honesta) de procurar algo em um vetor:
+    -   você começa no primeiro elemento
+    -   olha um por um
+    -   até achar o que procura (ou chegar ao final).
+
+A busca linear acontece aqui
+    boolean achou = false;
+
+    for (int i = 0; i < vetor.length; i++) {
+        if (vetor[i] == busca){
+            achou = true;
+            break;
+        }
+    }
+
+Vamos entender:
+
+->  O laço percorre o vetor do início ao fim.
+    Cada passo olha uma posição.
+
+    Ele pergunta:
+    -   "O valor nessa posição é igual ao número procurado?"
+
+    Se não for, continua andando.
+    Se sim, ele muda achou para true e dá um break (parando a busca).
+
+    Isso é exatamente a busca linear: verificar um elemento por vez até encontrar.
+
+Resultado
+    if (achou) {
+        System.out.println("Achou!");
+    }else{
+        System.out.println("Não achou...");
+    }
+
+    Se encontrou, celebra.
+    Se não, apenas informa que não existe no vetor.
+
+Ligando com o conceito de processamento (Big O)
+->  A busca linear tem custo O(n).
+    Ou seja:
+    
+    No pior caso, você verifica todas as posições.
+    No melhor caso (o número está na posição 0), você vê apenas 1.

@@ -1,0 +1,90 @@
+O que é Big O?
+
+->  Big O é um jeito de medir a velocidade de um algoritmo olhando para o crescimento do esforço conforme a entrada aumenta.
+    Não importa o computador, o Java, o processador…
+    O foco é:
+    -   Quando dobro o tamanho do problema, quanto o processamento cresce?
+
+É como medir o fôlego de um atleta:
+->  alguns correm suave por horas, outros cansam ao subir três degraus.
+
+Por que isso importa no processamento?
+-   Porque o computador trabalha fazendo operações.
+-   Quanto mais operações → mais tempo de processamento
+-   Quanto mais tempo → mais lento o programa
+    
+    Big O te diz exatamente como esse esforço cresce.
+
+As complexidades mais importantes
+-   O(1) — Tempo constante
+    O computador faz sempre a mesma quantidade de trabalho, não importa o tamanho da entrada.
+    Exemplo:
+        vetor[0];
+
+    Visualmente:
+    -   entrada: 10 itens → faz 1 passo  
+    -   entrada: 1.000 itens → faz 1 passo  
+    -   entrada: 1.000.000 itens → ainda 1 passo  
+
+    É o atleta que dá um pulo e já chegou 🦘.
+
+-   O(n) — Tempo linear
+    O trabalho cresce na mesma proporção do tamanho da entrada.
+    Ex.: busca linear, percorrer um vetor.
+
+    -   entrada: 10 itens → 10 passos  
+    -   entrada: 1000 itens → 1000 passos  
+    -   entrada: 1.000.000 → 1.000.000 passos  
+
+    O atleta caminha um passo por cada item na trilha.
+
+-   O(n²) — Tempo quadrático
+    Para cada item, você percorre todos os outros.
+    Ex.: Esse aqui engorda rápido — o processamento explode.
+
+    -   10 itens → 100 operações  
+    -   100 itens → 10.000 operações  
+    -   1000 itens → 1.000.000  
+
+    É como organizar cartas embaralhadas uma por uma sobre uma mesa: cresce rápido demais.
+
+-   O(log n) — Tempo logarítmico (maravilhoso para processamento)
+    O esforço cresce muito devagar, quase preguiçoso.
+    Ex.: busca binária, árvores balanceadas.
+
+    -   1000 itens → ~10 passos  
+    -   1.000.000 itens → ~20 passos  
+    -   1.000.000.000 itens → ~30 passos  
+
+    É o atleta que atravessa o deserto pulando de mirante em mirante, cortando caminho pela metade a cada passo.
+
+-   O(2ⁿ) — Tempo exponencial
+    Esse dá medo. Cresce como fogo em esponja seca.
+
+    -   10 itens → 1024 operações  
+    -   20 itens → 1.048.576  
+    -   30 itens → 1.073.741.824  
+
+    Use só quando não houver saída.
+
+-   O(n!) — Fatorial
+    O chef maluco que tenta todas as combinações possíveis.
+
+    -   10 itens → 3.628.800 combinações  
+    -   15 itens → 1.307.674.368.000  
+    
+    Evite. O computador chora.
+
+Resumo:
+
+    O(1)
+    Você abre só uma porta específica.
+
+    O(n)
+    Você abre todas as portas, uma a uma.
+
+    O(log n)
+    Você abre uma porta do meio, decide se o que procura está para esquerda ou direita, e repete.
+
+    O(n²)
+    Para cada porta, você verifica todas as outras.
