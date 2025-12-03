@@ -1,0 +1,56 @@
+O que é uma Pilha (Stack)?
+->  Uma pilha é uma estrutura de dados onde o último elemento inserido é o primeiro a sair.
+
+Regra suprema:
+-   LIFO — Last In, First Out
+    (o último que entra é o primeiro que sai)
+
+    É como uma torre de pratos no restaurante:
+    o prato que você coloca por último fica no topo e é o primeiro a ser retirado 🍽️⬆️
+
+Operações principais
+-   push
+    Coloca um item no topo da pilha.
+
+-   pop
+    Remove e retorna o item do topo.
+
+-   peek
+    Mostra o topo sem remover.
+
+-   isEmpty
+    Diz se está vazia.
+
+Visualizando uma pilha
+->  Se você fizer:
+
+    push(3)
+    push(7)
+    push(9)
+
+A pilha fica assim:
+
+   [9]  ← TOPO
+   [7]
+   [3]
+
+Se chamar pop():
+->  pop() → 9
+
+Agora a pilha vira:
+
+   [7] ← TOPO
+   [3]
+
+    Simples e elegante como uma torre de blocos coloridos
+
+Pilha na prática: quando usar?
+
+-   desfazer/refazer em editores (Ctrl+Z)
+-   chamadas de funções (a pilha de execução da JVM!)
+-   validar expressões matemáticas
+-   percorrer árvores
+-   conversão decimal → binário
+-   navegação tipo “voltar” no navegador
+
+Ela aparece muito mais do que parece.
