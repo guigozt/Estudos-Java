@@ -1,0 +1,52 @@
+O que é uma lista genérica?
+->  Pense em uma lista normal. Agora imagine que ela é uma lista-camaleão:
+        ela se adapta ao tipo de dado que você quiser guardar!
+
+    Uma vez você pode criar uma lista para Clientes.
+    Outra vez, para Números.
+    Outra, para Strings, e assim por diante.
+
+    Tudo usando a mesma classe, sem copiar código.
+    Essa magia vem dos generics (<T>) do Java.
+
+Por que generics existem?
+->  Sem generics, você teria que criar:
+
+    -   ListaDeClientes
+    -   ListaDeProdutos
+    -   ListaDeInteiros
+    -   ListaDeGatos
+
+    Com generics, você cria uma lista única:
+    -   ListaLigada<TIPO>
+
+    E o tipo real só é decidido quando você cria o objeto.
+
+Funcionamento (visual)
+
+->  A classe vira um molde flexível:
+
+    ListaLigada< T >
+            ↑
+        você decide o tipo
+
+Quando você escreve:
+->  ListaLigada<Cliente> lista = new ListaLigada<>();
+    Esse <Cliente> pega o lugar do <T> lá dentro da classe.
+
+Exemplo:
+
+    public class Caixa<T> {
+        private T valor;
+
+        public void guardar(T valor) {
+            this.valor = valor;
+        }
+
+        public T pegar() {
+            return valor;
+        }
+    }
+
+    Repare no <T> acima do nome da classe.
+    Ele diz: "o tipo ainda não sei… você me diz depois".
