@@ -1,0 +1,50 @@
+O que é o percurso em ordem (in-order) em uma Árvore Binária?
+
+O percurso em ordem é uma forma de visitar todos os nós de uma árvore binária seguindo uma ordem específica:
+
+1 → Visita a subárvore da esquerda
+2 → Visita o nó atual
+3 → Visita a subárvore da direita
+
+Podemos representar como:
+
+Esquerda → Raiz → Direita
+
+🧠 Por que isso é importante?
+
+Porque se a árvore for uma Árvore Binária de Busca (BST), o percurso em ordem devolve os valores em ordem crescente automaticamente.
+
+Exemplo:
+
+       8
+      / \
+     3   10
+    / \    \
+   1   6    14
+
+
+Percurso em ordem:
+
+1, 3, 6, 8, 10, 14
+
+
+Ou seja: a árvore guarda valores desordenados, mas o percurso os imprime ordenados.
+
+🔄 Como funciona o algoritmo in-order?
+
+Ele usa recursão.
+
+Para cada nó:
+
+- Percorre a esquerda
+- Mostra o valor
+- Percorre a direita
+
+
+Em pseudocódigo:
+
+inOrdem(no):
+    se no é nulo: pare
+    inOrdem(no.esquerda)
+    imprime(no.valor)
+    inOrdem(no.direita)

@@ -1,0 +1,29 @@
+Percurso Pós-Ordem (Post-Order)
+
+Ordem da visita:
+👉 Esquerda → Direita → Raiz
+
+📌 Ideia principal:
+
+Você só visita o nó atual depois de visitar tudo que está abaixo dele.
+
+📚 Quando usamos?
+
+Para remover nós de forma segura
+
+Para liberar memória em estruturas (por isso é usado em algoritmos de destruição de árvore)
+
+Para analisar subárvores antes da raiz
+
+🎯 Metáfora:
+
+É como arrumar a casa antes de sair:
+Primeiro arruma tudo (filhos), e por último você sai da casa (raiz).
+
+🎨 Comparação Didática com um Desenho Mental
+
+Imagine a árvore:
+
+      A
+     / \
+    B   C

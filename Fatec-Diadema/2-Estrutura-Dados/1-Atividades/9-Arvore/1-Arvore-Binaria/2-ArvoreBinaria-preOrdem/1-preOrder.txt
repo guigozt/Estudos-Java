@@ -1,0 +1,52 @@
+O que é pré-ordem numa árvore binária?
+
+Pré-ordem (pre-order) é um dos três principais tipos de percursos (traversal) usados para visitar todos os nós de uma árvore binária.
+
+Ele segue sempre a mesma ordem:
+
+✅ 1. VISITA o nó atual
+⬅️ 2. Percorre a subárvore ESQUERDA (recursivamente)
+➡️ 3. Percorre a subárvore DIREITA (recursivamente)
+
+Resumindo:
+
+Pré-ordem = Raiz → Esquerda → Direita
+
+🌱 Exemplo Visual
+
+Imagine esta árvore:
+
+        10
+       /  \
+      5    15
+     / \     \
+    2   7     20
+
+
+Aplicando pré-ordem:
+
+Visita 10
+
+Vai para a esquerda → 5
+
+Vai para a esquerda → 2
+
+Volta → direita de 5 → 7
+
+Volta para 10 → direita → 15
+
+Vai para a direita → 20
+
+💡 Resultado do percurso pré-ordem:
+
+10 → 5 → 2 → 7 → 15 → 20
+
+🧠 Por que pré-ordem é útil?
+
+Para copiar ou serializar uma árvore
+
+Para reconstruir a árvore quando combinado com em-ordem
+
+Para processar um nó antes de seus filhos
+
+Muito usado em interpretadores, compiladores e árvores sintáticas (AST)

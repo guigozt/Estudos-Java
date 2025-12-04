@@ -1,0 +1,109 @@
+O que é uma Árvore (estrutura de dados)?
+
+Uma árvore é uma estrutura usada para organizar dados de forma hierárquica, como se fosse uma árvore invertida (raiz em cima e galhos indo para baixo).
+
+Ela é formada por nós.
+Cada nó pode ter outros nós conectados a ele.
+
+🌱 Conceitos Básicos
+✔ 1. Nó (Node)
+
+É a unidade básica da árvore.
+Um nó contém:
+
+um valor
+
+referências para “filhos” (outros nós)
+
+✔ 2. Raiz (Root)
+
+É o primeiro nó da árvore.
+Todo caminho começa nela.
+
+✔ 3. Pai e Filho
+
+Nó pai → nó acima
+
+Nó filho → nó abaixo
+Exemplo:
+
+    10   ← pai
+   /  \
+  5    20  ← filhos
+
+✔ 4. Galhos / Sub-árvore
+
+Cada filho pode ter seus próprios filhos.
+Isso forma uma sub-árvore.
+
+✔ 5. Nós folha
+
+São nós que não têm filhos.
+Exemplo:
+
+    10
+   /  \
+  5    20
+       /
+      15   ← folha
+
+Arvore Binária (Binary Tree)
+
+É o tipo mais comum.
+
+📌 Cada nó pode ter no máximo 2 filhos:
+
+filho esquerda
+
+filho direita
+
+Assim:
+
+        10
+       /  \
+      5    15
+
+Árvore Binária de Busca (BST – Binary Search Tree)
+
+Esta é a principal para estudo.
+
+Ela segue uma regra MUITO importante:
+
+🎯 Para cada nó:
+
+valores menores vão para a esquerda
+
+valores maiores vão para a direita
+
+Exemplo inserindo: 10, 5, 20, 15
+
+       10
+      /  \
+     5    20
+         /
+        15
+
+
+Essa regra deixa a árvore organizada para busca rápida.
+
+🚀 Por que Árvores são boas?
+
+Porque elas reduzem o caminho que você precisa percorrer.
+
+Numa BST balanceada:
+
+Vetor → O(n)
+
+Lista → O(n)
+
+Árvore → O(log n) (muito mais rápido)
+
+É como procurar um nome em:
+
+Uma lista enorme (um por um)
+
+OU
+
+Um dicionário organizado alfabeticamente
+
+A árvore funciona como o dicionário.
