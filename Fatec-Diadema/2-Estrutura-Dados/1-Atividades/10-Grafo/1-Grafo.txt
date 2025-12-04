@@ -1,0 +1,117 @@
+O que é um Grafo?
+
+Um grafo é uma estrutura de dados usada para representar relações entre coisas.
+Ele é formado por dois elementos principais:
+
+✔ Vértices (ou nós)
+
+São os “pontos” do grafo.
+Cada vértice representa um objeto, uma pessoa, um lugar, uma cidade, etc.
+
+✔ Arestas
+
+São as “linhas” que conectam os vértices.
+Elas representam a relação entre os vértices.
+
+🎯 Pensando de forma simples
+
+Imagine o grafo como uma rede social:
+
+Cada pessoa é um vértice.
+
+A amizade entre elas é uma aresta.
+
+Ou ainda, imagine um mapa de cidades:
+
+Cada cidade é um vértice.
+
+A estrada entre duas cidades é uma aresta.
+
+🧠 Por que usar grafos?
+
+Porque eles servem para modelar situações onde coisas estão conectadas.
+E isso aparece MUITO na computação:
+
+Redes sociais
+
+Mapas e GPS
+
+Sistemas de recomendação
+
+Roteamento de internet
+
+IA (redes neurais são grafos)
+
+Diagnóstico de rotas em circuitos elétricos
+
+Jogos (movimentos possíveis de um personagem)
+
+📌 Tipos de grafos
+
+Aqui estão os mais importantes:
+
+🔹 1. Grafo não-direcionado
+
+A ligação vale nos dois sentidos.
+Exemplo: amizade.
+
+A — B
+
+
+Se A é amigo de B, B também é amigo de A.
+
+🔹 2. Grafo direcionado (ou dígrafo)
+
+A aresta tem direção →
+Exemplo: seguidores no Instagram.
+
+A → B  
+
+
+A segue B, mas B não necessariamente segue A.
+
+🔹 3. Grafo ponderado
+
+Cada aresta tem um "peso".
+Exemplo: distância entre cidades.
+
+A —5— B
+
+
+(A até B = 5 km)
+
+🔹 4. Grafo não-ponderado
+
+A aresta não tem peso. É apenas uma conexão simples.
+
+🔹 5. Grafo cíclico
+
+Tem ciclo (dá para voltar ao começo sem repetir arestas)
+
+🔹 6. Grafo acíclico
+
+Não possui ciclos.
+
+🔹 7. Grafo conexo
+
+Todos os vértices estão ligados de alguma forma.
+
+🧠 Representação de Grafos na Computação
+
+Existem duas formas mais comuns:
+
+✔ Lista de Adjacência
+
+Armazena quem está conectado a quem:
+
+A: B, C
+B: C
+C: A
+
+✔ Matriz de Adjacência
+
+|   | A | B | C |
+| - | - | - | - |
+| A | 0 | 1 | 1 |
+| B | 0 | 0 | 1 |
+| C | 1 | 0 | 0 |
